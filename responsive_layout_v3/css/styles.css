@@ -4,14 +4,93 @@
 
 body {
     text-align: center;
+    margin: 0 auto;
+    background-color: rgba(245, 245, 245, 0.973);
 }
 
+main {
+    margin-top: 15px;
+    padding-bottom: 35px;
+}
+header {
+    margin-bottom: 40px;
+}
+footer {
+    margin: 0 auto;
+    padding: 15px 0px;
+    border-top: 1px rgba(221, 221, 221, 0.479) solid;
+    width: 90%
+}
 img {
-    width: 100%;
+    width: 90%;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+header p,
+.project p {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.contact p {
+    margin: 25px auto;
+    width: 90%;
+}
+
+#Portfolio {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+.profile-image {
+    transform: scale(.70);
+}
+
+.main-nav li {
+    background-color: white;
+    padding: 10px 0px;
+    margin: 5px 15px;
+}
+
+.project {
+    padding: 20px 0 15px 0;
+}
+
+.contact {
+    padding-top: 35px;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.footer-container {
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-around;
+}
+
+.footer-item {
+    margin: 10px 0px;
+}
+
+.footer-item-1 {
+    margin-right: auto;
+}
+
+a,
+.heading {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
 }
