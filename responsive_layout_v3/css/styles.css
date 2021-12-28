@@ -174,4 +174,20 @@ a,
     #Contact {
         width: 750px;
     }
+
+    .hidden-text {
+        display: contents;
+    }
+
+    .footer-item-2 {
+        display: none;
+    }
+
+    .footer-container {
+        justify-content: space-evenly;
+    }
+    
+    .footer-item a {
+        padding: 10px;
+    }
 }
