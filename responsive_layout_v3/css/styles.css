@@ -42,7 +42,7 @@ ul {
 
 p {
     line-height: 1.5;
-    width: 90%;
+    /* width: 90%; */
 }
 
 
@@ -110,11 +110,19 @@ header section ,
     margin-right: auto;
 }
 
+.footer-item-1 p {
+    margin-top: 0px;
+}
+
 a,
 .heading {
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
+}
+
+.hidden-name {
+    display: none;
 }
 
 @media screen and (min-width: 768px ) {
@@ -190,4 +198,74 @@ a,
     .footer-item a {
         padding: 10px;
     }
+}
+
+@media screen and (min-width: 1024px ) {
+
+    header {
+        width: 90%;
+        margin-bottom: 200px;;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #Portfolio {
+        margin: 0 auto;
+        width: 990px;
+    }
+    .hidden-name {
+        display: contents;
+    }
+
+    .main-nav {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        /* width: 90%; */
+        }
+
+    .nav-item-1 {
+        margin-right: auto;
+    }
+
+    .nav-item-1 p {
+        width: auto;
+    }
+
+    .nav-item-4 {
+        margin-right: 0;
+    }
+
+    header section {
+        width: 990px;
+    }
+     
+    .profile-image {
+        width: 350px;
+        margin-right: calc(100% - 95%);
+    }
+
+    header p {
+        width: 500px;
+        margin-left: 0;
+    }
+
+    .projects {
+        width: 990px;
+    }
+
+    .project {
+        width: 300px;
+    }
+
+    .project-image {
+        width: 300px;
+    }
+
+    .contact p{
+        width: 51%;
+    }
+
 }
