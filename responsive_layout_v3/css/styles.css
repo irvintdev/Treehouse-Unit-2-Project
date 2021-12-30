@@ -3,10 +3,24 @@
 }
 
 body {
-    text-align: center;
     margin: 0 auto;
     background-color: rgba(245, 245, 245, 0.973);
-    /* max-width: 290px; */
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: #696666;
+}
+
+body ,
+header ,
+main ,
+footer ,
+header p ,
+.project p ,
+header section ,
+#Contact ,
+.project ,
+.footer-container {
+    margin: 0 auto;
 }
 
 header,
@@ -14,7 +28,6 @@ main,
 footer {
     width: 100vw;
     text-align: center;
-    margin: 0 auto;
 }
 
 main {
@@ -25,13 +38,13 @@ header {
     margin-bottom: 40px;
 }
 footer {
-    margin: 0 auto;
     padding: 15px 0px;
     border-top: 1px rgba(221, 221, 221, 0.479) solid;
-    width: 90%;
 }
-img {
-    /* width: 90%; */
+
+footer ,
+.contact p {
+    width: 90%;
 }
 
 ul {
@@ -40,44 +53,52 @@ ul {
     padding: 0;
 }
 
-p {
-    line-height: 1.5;
-    /* width: 90%; */
+h1 {
+    font-weight: 700;
 }
 
+h3 {
+    font-weight: 400;
+    font-size: unset;
+}
+
+p {
+    line-height: 1.5;
+}
 
 header p,
 .project p {
-    margin: 0 auto;
-    width: 90%;
+    width: 98%;
 }
 
 header section ,
 #Contact {
     width: 288px;
-    margin: 0 auto;
 }
 .contact p {
     margin: 25px auto;
-    width: 90%;
 }
 
 #Portfolio {
-    background-color: white;
     padding-top: 20px;
     padding-bottom: 45px;
 }
 
+#Portfolio ,
+.main-nav li {
+    background-color: white;
+}
+
 .profile-image {
     width: 200px;
+    margin: 10px 0;
 }
 
 .project-image {
-    width: 288px;
+    width: 100%;
 }
 
 .main-nav li {
-    background-color: white;
     padding: 10px 0px;
     margin: 5px 15px;
 }
@@ -85,7 +106,6 @@ header section ,
 .project {
     padding: 20px 0 15px 0;
     width: 288px;
-    margin: 0 auto;
 }
 
 .contact {
@@ -98,7 +118,6 @@ header section ,
 
 .footer-container {
     display: flex;
-    margin: 0px auto;
     justify-content: space-between;
 }
 
@@ -114,11 +133,17 @@ header section ,
     margin-top: 0px;
 }
 
+.footer-item-1 p ,
+a ,
+.heading {
+    font-weight: bold;
+}
 a,
 .heading {
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
+    font-size: small;
 }
 
 .hidden-name {
@@ -129,8 +154,6 @@ a,
 
     .main-nav {
         display: inline-flex;
-        /* flex-direction: row; */
-        /* justify-content: space-around; */
     }
 
     .main-nav li {
@@ -147,8 +170,8 @@ a,
     header p {
         text-align: left;
         margin-top: 10px;
-        margin-left: calc(100% - 95%);
-        /* width: 50%; */
+        margin-left: calc(100% - 97%);
+        font-size: larger;
     }
 
     .projects {
@@ -162,12 +185,13 @@ a,
         width: 350px;
         margin: 20px 0px;
     }
-    .project-image {
-        width: 345px;
-    }
 
     .project p {
-        width: 260px;
+        width: 82%;
+    }
+
+    .contact p {
+        width: 56%;
     }
 
     header {
@@ -204,7 +228,7 @@ a,
 
     header {
         width: 90%;
-        margin-bottom: 200px;;
+        margin-bottom: 150px;
     }
 
     h1 {
@@ -213,7 +237,7 @@ a,
 
     #Portfolio {
         margin: 0 auto;
-        width: 990px;
+        width: 960px;
     }
     .hidden-name {
         display: contents;
@@ -223,15 +247,11 @@ a,
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
-        /* width: 90%; */
-        }
-
-    .nav-item-1 {
-        margin-right: auto;
     }
 
     .nav-item-1 p {
-        width: auto;
+        font-weight: bold;
+        font-size: x-large;
     }
 
     .nav-item-4 {
@@ -239,33 +259,34 @@ a,
     }
 
     header section {
-        width: 990px;
+        width: 920px;
     }
      
     .profile-image {
         width: 350px;
-        margin-right: calc(100% - 95%);
+        margin-right: 10px;
     }
 
     header p {
         width: 500px;
         margin-left: 0;
+        font-size: 1.3em;
     }
 
     .projects {
-        width: 990px;
+        width: 920px;
     }
 
     .project {
-        width: 300px;
+        width: 290px;
     }
 
-    .project-image {
-        width: 300px;
+    .project p {
+        width: 96%;
     }
 
     .contact p{
-        width: 51%;
+        width: 68%;
+        font-size: larger;
     }
-
 }
