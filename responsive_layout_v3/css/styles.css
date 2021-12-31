@@ -38,7 +38,6 @@ header {
     margin-bottom: 40px;
 }
 footer {
-    padding: 15px 0px;
     border-top: 1px rgba(221, 221, 221, 0.479) solid;
 }
 
@@ -58,17 +57,19 @@ h1 {
 }
 
 h3 {
-    font-weight: 400;
-    font-size: unset;
+    font-weight: bolder;
+    font-size: medium;
 }
 
-p {
+.intro {
     line-height: 1.5;
+    width: 300px;
+    margin: 0 auto;
 }
 
-header p,
 .project p {
-    width: 98%;
+    width: 97%;
+    line-height: 1.3em;
 }
 
 header section ,
@@ -85,7 +86,7 @@ header section ,
 }
 
 #Portfolio ,
-.main-nav li {
+.main-nav a {
     background-color: white;
 }
 
@@ -98,9 +99,17 @@ header section ,
     width: 100%;
 }
 
-.main-nav li {
+
+.main-nav {
+    display: grid;
+}
+.main-nav a {
     padding: 10px 0px;
     margin: 5px 15px;
+}
+
+.profile {
+    margin-bottom: 40px;
 }
 
 .project {
@@ -112,26 +121,27 @@ header section ,
     padding-top: 35px;
 }
 
-.hidden-text {
-    display: none;
-}
-
 .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-item {
-    margin: 10px 0px;
+    margin: 10px 0;
 }
-
 .footer-item-1 {
     margin-right: auto;
 }
 
-.footer-item-1 p {
-    margin-top: 0px;
+.hidden-text {
+    display: none;
 }
+
+footer p {
+    font-weight: bold;
+}
+
 
 .footer-item-1 p ,
 a ,
@@ -146,20 +156,33 @@ a,
     font-size: small;
 }
 
-.hidden-name {
-    display: none;
-}
-
 @media screen and (min-width: 768px ) {
 
+    .main-header ,
     .main-nav {
-        display: inline-flex;
+        display: flex;
     }
 
-    .main-nav li {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav a {
         background-color: inherit;
     }
 
+    .profile {
+        width: 750px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .intro {
+        margin-left: 15px;
+        text-align: left;
+        width: 450px;
+        font-size: 1.25em;
+    }
     .profile-image {
         width: 290px;
         float: right;
@@ -194,10 +217,6 @@ a,
         width: 56%;
     }
 
-    header {
-        margin-bottom: 120px;
-    }
-
     header section {
         margin-top: 50px;
     }
@@ -207,32 +226,32 @@ a,
         width: 750px;
     }
 
-    .hidden-text {
-        display: contents;
-    }
-
     .footer-item-2 {
         display: none;
     }
 
-    .footer-container {
-        justify-content: space-evenly;
+    .hidden-text {
+        display: contents;
     }
-    
+
     .footer-item a {
         padding: 10px;
     }
+
+    .footer-item-5 a {
+        padding-right: 0px;
+    }
+
 }
 
 @media screen and (min-width: 1024px ) {
 
     header {
         width: 90%;
-        margin-bottom: 150px;
     }
 
     h1 {
-        display: none;
+        font-size: larger;
     }
 
     #Portfolio {
@@ -243,9 +262,8 @@ a,
         display: contents;
     }
 
-    .main-nav {
-        margin-top: 20px;
-        display: flex;
+    .main-header {
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -262,7 +280,15 @@ a,
     .projects {
         width: 920px;
     }
-     
+    
+    .profile {
+        width: 920px;
+        margin-bottom: 150px;
+    }
+
+    .intro {
+        width: 500px;
+    }
     .profile-image {
         width: 350px;
         margin-right: 10px;
