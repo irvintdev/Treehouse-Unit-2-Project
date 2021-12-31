@@ -258,7 +258,8 @@ a,
         margin-right: 0;
     }
 
-    header section {
+    header section ,
+    .projects {
         width: 920px;
     }
      
@@ -271,10 +272,6 @@ a,
         width: 500px;
         margin-left: 0;
         font-size: 1.3em;
-    }
-
-    .projects {
-        width: 920px;
     }
 
     .project {
